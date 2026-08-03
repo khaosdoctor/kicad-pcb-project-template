@@ -1,5 +1,6 @@
 # KiBot configuration for KiCad PCB projects
-# Run with: kibot -e "project.kicad_sch" -b "project.kicad_pcb"
+# Run with: kibot (auto-detects the .kicad_pcb/.kicad_sch in the current dir)
+# or kibot -e your.kicad_sch -b your.kicad_pcb if there's more than one
 # Docs: https://github.com/INTI-CMNB/KiBot
 kibot:
   version: 1

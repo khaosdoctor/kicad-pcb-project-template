@@ -18,8 +18,9 @@ jobs:
         uses: INTI-CMNB/KiBot@v2_k10
         with:
           config: kibot.yaml
-          board: 'project.kicad_pcb'
-          schema: 'project.kicad_sch'
+          # board/schema default to __SCAN__, which auto-detects the single
+          # .kicad_pcb/.kicad_sch file in the repo — no renaming required.
+          # Set them explicitly here only if the repo has more than one.
 
       - name: Upload outputs
         uses: actions/upload-artifact@v4
